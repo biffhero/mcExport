@@ -7,7 +7,6 @@
 # This script will parse that file, and break out some of the
 # files that are inside of the archive.
 #
-# TODO is at the bottom of the file
 
 import xml.etree.ElementTree as ET
 import base64
@@ -73,6 +72,7 @@ def main():
                     if not os.path.exists("mc/other"):
                         os.mkdir("mc/other")
                     fileDirectory = path("mc/other") 
+                shortName = shortName + '.eld'
                 outputFile = fileDirectory / shortName
                 fo = open(outputFile, 'wb')
                 fo.write(textProgram)
