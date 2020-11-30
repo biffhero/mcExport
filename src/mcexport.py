@@ -140,7 +140,7 @@ def main():
                     if not os.path.exists("mc/other"):
                         os.mkdir("mc/other")
                     fileDirectory = path("mc/other") 
-                shortName = shortName + '.eld'
+                shortName = shortName + '.txt'
                 outputFile = fileDirectory / shortName
                 fo = open(outputFile, 'wb')
                 fo.write(textProgram)
